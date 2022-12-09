@@ -1,0 +1,16 @@
+name: Product
+description: Creates content type product and product detail page.
+package: Custom
+type: module
+dependencies:
+  - drupal:link
+  - drupal:node
+core_version_requirement: ^9.0
+
+configure:
+  - node.type.product
+  - field.storage.node.field_product_image
+  - field.storage.node.field_app_purchase_link
+  - field.field.node.product.field_product_image
+  - field.field.node.product.field_app_purchase_link
+  - field.field.node.product.body
